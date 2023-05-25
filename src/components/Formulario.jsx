@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import Swal from 'sweetalert2'
 
 const Formulario = () => {
   const [nombre, setNombre] = useState("");
@@ -45,14 +46,14 @@ const Formulario = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validaciones() == "") {
-      alert(`nombre: ${nombre} apellido: ${apellido} `);
+        Swal.fire({
+            title: 'Formulario',
+            text: 'Datos Enviados',
+            icon: 'success',
+          })
     } else {
       alert(validaciones());
     }
-
-    console.log(
-      `nombre: ${nombre} apellido: ${apellido} dni: ${dni} mail: ${mail} `
-    );
   };
   return (
     <div>
