@@ -53,6 +53,10 @@ const Formulario = () => {
             text: 'Datos Enviados',
             icon: 'success',
           })
+          setApellido('')
+          setDni('')
+          setMail('')
+          setNombre('')
     } else {
       Swal.fire({
         title: 'ERROR',
