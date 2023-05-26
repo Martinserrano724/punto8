@@ -1,0 +1,17 @@
+.contenedorFormulario{
+    width: 400px;
+    background: rgb(237, 161, 161);
+    margin-top: 30px;
+    font-size: 12px;
+  
+}
+.tituloFormulario{
+    background: rgb(248, 133, 133);    
+}
+input{
+    height: 30px;
+    font-size: 30px; 
+}
+label{
+    margin-left: 10px;
+}
